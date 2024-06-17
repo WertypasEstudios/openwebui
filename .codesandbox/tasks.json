@@ -6,7 +6,7 @@
   "tasks": {
     "run": {
       "name": "build",
-      "command": "cd ./.devcontainer && docker rm -f open-webui || true && docker run -d -p 3000:8080 -e DATABASE_URL=$DATABASE_URL -e DEFAULT_USER_ROLE=$DEFAULT_USER_ROLE -e GID=$GID -e MODEL_FILTER_LIST=$MODEL_FILTER_LIST -e OPENAI_API_BASE_URL=$OPENAI_API_BASE_URL -e OPENAI_API_KEY=$OPENAI_API_KEY -e UID=$UID -e WEBUI_SECRET_KEY=$WEBUI_SECRET_KEY -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main",
+      "command": "cd ./.devcontainer && /app/restart_container.sh",
       "runAtStart": true
     }
   }
