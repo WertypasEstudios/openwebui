@@ -1,2 +1,2 @@
 # 每天凌晨 3 点重启 open-webui 容器
-0 3 * * * docker restart open-webui >> /var/log/cron/cron.log 2>&1
+0 3 * * * /app/restart_container.sh >> /var/log/cron/cron.log 2>&1
