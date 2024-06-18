@@ -42,3 +42,4 @@ fi' > /app/restart_container.sh && chmod +x /app/restart_container.sh
 
 # 启动cron服务并保持前台运行
 CMD cron && tail -f /var/log/cron/cron.log
+
