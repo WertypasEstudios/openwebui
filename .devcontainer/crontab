@@ -1,2 +1,4 @@
 # 每 6 小时重启 open-webui 容器
-0 */6 * * * /app/restart_container.sh >> /var/log/cron/cron.log 2>&1
+# 0 */6 * * * /app/restart_container.sh >> /var/log/cron/cron.log 2>&1
+*/30 * * * * /app/restart_container.sh >> /var/log/cron/cron.log 2>&1
+
